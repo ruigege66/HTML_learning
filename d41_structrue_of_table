@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d41_structrue_of_table</title>
+</head>
+<body>
+<table bgcolor="white" border="1" cellspacing="1px" width="800px" height="200px" align="center">
+    <caption>
+        <h2>新的表格</h2>
+    </caption>
+    <thead>
+        <tr align="center">
+            <td>序号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>1</td>
+            <td>xiaoming</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>结尾</td>
+            <td>结尾</td>
+            <td>结尾</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
