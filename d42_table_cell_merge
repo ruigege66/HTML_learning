@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d42_table_cell_merge</title>
+</head>
+<body>
+<table bgcolor="black" width="500" boder="1" height="500" align="center">
+    <tr bgcolor="white">
+        <td  colspan="2"></td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr bgcolor="white">
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2"></td>
+
+    </tr>
+</table>
+</body>
+</html>
