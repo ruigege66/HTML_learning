@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d43_table_exercise</title>
+</head>
+<body>
+<table bgcolor="black" boder="1px" align="center" width="500px" height="400px">
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="4"></td>
+    </tr>
+    <tr bgcolor="white">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr  bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br>
+<br>
+<table bgcolor="black" boder="1px" align="center" width="500px" height="400px">
+    <tr bgcolor="white">
+        <td></td>
+        <td rowspan="4" ></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr  bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br>
+<br>
+<table bgcolor="black" boder="1px" align="center" width="500px" height="400px">
+    <tr bgcolor="white">
+        <td></td>
+        <td colspan="2" ></td>
+        <td></td>
+
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td rowspan="3"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr  bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br>
+<br>
+<table bgcolor="black" boder="1px" align="center" width="500px" height="400px">
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td colspan="2" rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <!--<td colspan="2"></td>-->
+        <td></td>
+    </tr>
+    <tr  bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
