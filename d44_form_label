@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d44_form_label</title>
+</head>
+<body>
+<form>
+    账号：<input type="text"><br>
+    密码：<input type="password"><br>
+    账号：<input type="text" value="lnj"><br>
+    密码：<input type="passwoord" value="123"><br>
+</form>
+
+</body>
+</html>
