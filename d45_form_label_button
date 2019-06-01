@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d45_form_label_button</title>
+</head>
+<body>
+<form action="www.baidu.com">
+    账号：<input type="text" name="abc"><br>
+    密码：<input type="password"><br>
+
+    <input type="button" value="牛逼" onclick="alert('lnj')"><br>
+
+    <input type="image" height="100px" src="image/play_tennis.jpg" o2nclick="alert('lnj')"><br>
+
+    <input type="reset" value="清空"><br>
+
+    <input type="submit"><br>
+
+    <input type="hidden" name="cc" value="abc">
+
+</form>
+
+</body>
+</html>
