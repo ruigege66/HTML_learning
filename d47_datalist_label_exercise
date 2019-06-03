@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d47_datalist_label_exercise</title>
+</head>
+<body>
+    请输入你的车型：<input type="text" list="diyi">
+
+<datalist id="diyi">
+    <option>大众</option>
+    <option>奔弛</option>
+    <option>宝马</option>
+    <option>路虎</option>
+    <option>宾利</option>
+    <option>沃尔沃</option>
+    <option>玛莎拉蒂</option>
+    <option>保时捷</option>
+    <option>兰博基尼</option>
+    <option>帕加尼</option>
+    <option>QQ飞车</option>
+    <option>马车</option>
+</datalist>
+
+</body>
+</html>
