@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d49_select_label_and_textarea_label</title>
+</head>
+<body>
+<select>
+    <option value="">北京</option>
+    <option value="">上海</option>
+    <option value="">广西</option>
+    <option selected="selected">武汉</option>
+</select>
+
+<br>
+<hr>
+<select name="" id="">
+    <optgroup label="北京">
+        <option value="">海淀</option>
+        <option value="">朝阳</option>
+        <option value="">东城</option>
+        <option selected="selected">丰台</option>
+    </optgroup>
+
+    <optgroup label="上海">
+        <option value="">浦东</option>
+        <option value="">虹桥</option>
+        <option value="">徐汇</option>
+        <option selected="selected">普陀</option>
+    </optgroup>
+
+</select>
+
+<br>
+<hr>
+
+<textarea name="" id="" cols="30" rows="10">
+
+</textarea>
+</body>
+</html>
