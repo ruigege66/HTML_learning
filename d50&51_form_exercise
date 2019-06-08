@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d50&51_form_exercise</title>
+</head>
+<body>
+<form action="www.baidu.com">
+    <fieldset>
+        <legend>注册界面</legend>
+    账号：<input type="text" id="d1" name="account">
+    <br>
+    密码：<input type="password" id="d2" name="password">
+    <br>
+    性别：  <input type="radio" name="gender" value="male">男
+            <input type="radio" name="gender" value="female">女
+            <input type="radio" name="gender" checked="checked" value="screct">保密
+    <br>
+    爱好：  <input type="checkbox" checked="checked" name="hobby" value="basketball">篮球
+            <input type="checkbox" name="hobby" value="message">按摩
+            <input type="checkbox" name="hobby" value="run">跑步
+            <input type="checkbox" name="hobby" value="bungee jumping">蹦极
+            <input type="checkbox" name="hobby" value="hit on a girl">撩妹
+    <br>
+    简介：
+    <textarea cols="30" rows="10" name="description"></textarea>
+    <br>
+    生日：<input type="date" name="birthday">
+    <br>
+    邮箱： <input type="email" name="mail">
+    <br>
+    移动电话： <input type="number" name="phoneNumber">
+    <br>
+    <input type="submit"  value="马上注册">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset" value="清空所有信息">
+    <br>
+    <input type="button" value="瞎按">
+        </fieldset>
+</form>
+
+</body>
+</html>
