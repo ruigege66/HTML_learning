@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d52_vidoe_labelz</title>
+</head>
+<body>
+<video src="神秘巨星.mp4" controls="controls" poster="image/play_tennis.jpg"  height="500px" width="600px">华盛顿邮报</video>
+</body>
+</html>
+
+<!--autoplay="autoplay" loop="loop" preload="preload"-->
