@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d54_audio_label_exercise</title>
+</head>
+<body>
+<audio src="扯淡.mp3" controls="controls"></audio>
+
+<audio  controls="controls">
+    <source src="扯淡.mp3" type="audio/audimp3">
+    <source src="扯淡.mp3" type="audio/Ogg Vorbis">
+    <source src="扯淡.mp3" type="audio/Wav">
+</audio>
+
+</body>
+</html>
