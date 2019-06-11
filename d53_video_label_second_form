@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d53_video_label_second_form</title>
+</head>
+<body>
+
+<video controls="controls" width="500px" height="500px">
+    <source src="神秘巨星.mp4" type="video/webm"></source>
+    <source src="神秘巨星.mp4" type="video/MPEG4"></source>
+    <source src="神秘巨星.mp4" type="video/Ogg"></source>
+</video>
+
+</body>
+</html>
