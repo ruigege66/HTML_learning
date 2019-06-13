@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<details>
+    <summary>概要信息</summary>
+    详细信息
+</details>
+
+<marquee direction="right">随便写点东西展示一下</marquee>
+<marquee direction="left">随便写点东西展示一下</marquee>
+<marquee direction="up">随便写点东西展示一下</marquee>
+<marquee direction="down">随便写点东西展示一下</marquee>
+
+<hr>
+<br>
+<marquee scrollamount="10" direction="">666</marquee>
+<marquee scrollamount="50" direction="">666</marquee>
+<marquee scrollamount="100" direction="">666</marquee>
+<hr>
+<br>
+
+<marquee behavior="slide" scrollamount="50">撞墙</marquee>
+<marquee behavior="alternate" scrollamount="50">撞墙</marquee>
+
+<hr>
+<br>
+<marquee loop="1" scrollamount="50">循环</marquee>
+<marquee loop="2" scrollamount="50">循环</marquee>
+
+</body>
+</html>
