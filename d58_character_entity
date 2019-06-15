@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d58_character_entity</title>
+</head>
+<body>
+
+<p>我    我 很 厉
+害
+</p>
+<p>我&nbsp;&nbsp;&nbsp;厉害</p>
+<p>到目前为止厉害了</p>
+<p>到目前为止&lt;h1&gt;厉害了</p>
+
+</body>
+</html>
