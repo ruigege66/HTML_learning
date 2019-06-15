@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d55_abandon_label</title>
+</head>
+<body>
+<hr>
+<br>
+<b>我是文字1</b>
+<u>我是文字2</u>
+<i>我是文字3</i>
+<s>我是文字4</s>
+
+<hr>
+<strong>我是文字1</strong>
+<ins>我是文字2</ins>
+<em>我是文字3</em>
+<del>我是文字4</del>
+</body>
+</html>
