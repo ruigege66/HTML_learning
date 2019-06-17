@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        h1{
+            text-align: center;
+            color: crimson;
+            font-family:"微软雅黑";
+
+        }
+        p{
+            text-align: center;
+            color:red;
+            font-size:20px
+
+        }
+    </style>
+</head>
+<body>
+<!--<h1 align="center">-->
+    <!--<font face="微软雅黑" color="#7fffd4">成功法则</font>-->
+<!--</h1>-->
+<!--<p align="center">-->
+    <!--<font face="微软雅黑" color="#dc143c" size="10">能吃</font>-->
+<!--</p>-->
+<!--<p align="center">-->
+    <!--<font>能喝</font>-->
+<!--</p>-->
+<!--<p align="center">-->
+    <!--能睡-->
+<!--</p>-->
+<h1>
+    成功法则
+</h1>
+<p>
+    能吃
+</p>
+<p>
+    能喝
+</p>
+<p>
+    能睡
+</p>
+</body>
+</html>
