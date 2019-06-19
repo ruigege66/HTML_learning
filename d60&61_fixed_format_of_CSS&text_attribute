@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d60&61_fixed_format_of_CSS&text_attribute</title>
+    <style>
+        p{
+            font-style:italic;
+            font-weight:900;
+            font-size:50px;
+            font-family:"微软雅黑"；
+        }
+    </style>
+</head>
+<body>
+<!---->
+<p>我是一个段落</p>
+<hr>
+<hr>
+<i>被废弃的倾斜</i>
+<br>
+<b>被废弃的加粗</b>
+
+</body>
+</html>
