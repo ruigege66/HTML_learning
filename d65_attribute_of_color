@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d65_attribute_of_color</title>
+    <style>
+        p{
+            color:red;
+            color:rgb(25,220,245);
+            color:rgba(255,0,0,0.5);
+            color:rgba(255,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+<p>我是用来修改颜色都文字</p>
+</body>
+</html>
