@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            text-decoration: line-through;
+            text-align: center;
+            text-indent: 2em;
+        }
+        u{
+            text-decoration: overline;
+            text-align: right;
+            text-indent: 100px;
+        }
+        h1{
+            text-decoration:underline;
+            text-align: left;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<u>我是一个事例文字</u>
+<p>我也是一个装饰文字</p>
+<h1>我更是一个事例文字</h1>
+<a href="https://www.baidu.com">我是一个超级链接</a>
+</body>
+</html>
