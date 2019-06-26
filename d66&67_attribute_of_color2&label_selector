@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d66&67_attribute_of_color2&label_selector</title>
+    <style>
+        p{
+            color: #ff4b54;
+        }
+        input{
+            color: #37fa1e;
+        }
+        
+    </style>
+</head>
+<body>
+<p>我们是使用一次十六进制</p>
+<ul>
+    <ol>
+        <ul>
+            <ol><p>cvsduhfcu</p></ol>
+        </ul>
+    </ol>
+</ul>
+
+测试用例：<input type="text">
+
+</body>
+</html>
