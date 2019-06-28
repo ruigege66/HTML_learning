@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d68_id_selector</title>
+    <style>
+        p{
+            color: rgb(255,45,45);
+        }
+        #label1{
+            color:black;
+        }
+        #label2{
+            color: #37fa1e;
+        }
+        #label3{
+            color: blue;
+        }
+        #label4{
+            color:green;
+        }
+    </style>
+
+</head>
+<body>
+<b id="label1"></b>
+<p id="label2">迟到毁一生</p>
+<p id="label3">早退穷三代</p>
+<p id="label4">按时上下班</p>
+<p id="label5">必成高富帅</p>
+
+</body>
+</html>
