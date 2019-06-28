@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d69_class_selector</title>
+    <style>
+        .pp2{
+            color: aqua;
+        }
+        .pp3{
+            color:blue;
+        }
+        .ppp{
+            font-size: 50px;
+        }
+        .pppp{
+            color:red;
+        }
+        .ppppp{
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<p class="pp2">迟到毁一生</p>
+<p class="pp3">早退穷三代</p>
+<p class="pp2">按时上下班</p>
+<p class="pp2">必成高富帅</p>
+<hr>
+
+<p class="ppp pppp ppppp">实验一下</p>
+
+</body>
+</html>
