@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div p{
+            color:red;
+        }
+        #test1 p{
+            color:blue;
+        }
+        .test2{
+            color:green;
+        }
+        div ul li p{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<p>我是段落1</p>
+<div id="test1" class="test2">
+    <p>我是红的1</p>
+    <p>我是红的2</p>
+    <ul>
+        <li><p>重孙子标签p，试一试</p></li>
+    </ul>
+</div>
+
+</body>
+</html>
