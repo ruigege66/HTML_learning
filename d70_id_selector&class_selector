@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d70_id_selector&class_selector</title>
+    <style type="text/css">
+        .d1{
+            color:red;
+            font-family: 宋体;
+        }
+        .d2{
+            color:green;
+            font-family: 宋体;
+        }
+        .d3{
+            color:red;
+            font-family: 楷体;
+        }
+        .color_red{
+            color: red;
+        }
+        .color_green{
+            color:green;
+        }
+        .ff_songti{
+            font-family: 宋体;
+        }
+        .ff_kaiti{
+            font-family: 楷体;
+        }
+    </style>
+</head>
+<body>
+<p class="d1">我是好人</p>
+<p class="d2">我是学生</p>
+<p class="d3">我是坏人</p>
+<p class="color_red ff_songti">我是好人</p>
+<p class="color_green ff_songti">我是学生</p>
+<p class="color_red ff_kaiti">我是坏人</p>
+</body>
+</html>
