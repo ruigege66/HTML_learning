@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d74_intersection_selecotr</title>
+    <style>
+        p.abc1{
+            color:red;
+        }
+        .abc2#open1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<p class="abc2" id="open1">测试1</p>
+<p class="abc1">测试2</p>
+<p class="abc3">测试3</p>
+</body>
+</html>
