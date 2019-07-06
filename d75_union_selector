@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d75_union_selector</title>
+    <style type="text/css">
+        .abc1,#abc2,.abc3{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<p class="abc1">并集1</p>
+<p id="abc2">并集2</p>
+<p class="abc3">并集3</p>
+</body>
+</html>
