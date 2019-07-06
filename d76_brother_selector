@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d76_brother_selector</title>
+    <style>
+        h1+p+p+p+a{
+            color:red;
+        }
+        h2~p{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+<h1>我是标题1</h1>
+<p>我是段落1</p>
+<p>我是段落2</p>
+<p>我是段落3</p>
+<a href="#">我来阻挡1</a>
+<h1>我是标题2</h1>
+<p>我是标题5</p>
+<p>我是标题6</p>
+<p>我是标题7</p>
+<hr>
+<br>
+<h2>我是标题3</h2>
+<a href="#">我来阻挡1</a>
+<p>我是段落8</p>
+<p>我是段落9</p>
+<p>我是段落10</p>
+<a href="#">我来阻挡2</a>
+<h2>我是标题4</h2>
+<p>我是标题11</p>
+<p>我是标题12</p>
+<p>我是标题13</p>
+</body>
+</html>
