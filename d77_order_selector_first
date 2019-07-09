@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p:first-child{
+            color:red;
+        }
+        p:first-of-type{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+<h1>优秀</h1>
+<p>我是一梯队</p>
+<p>我是一梯队</p>
+<p>我是一梯队</p>
+<div>
+    <p>我是第二梯队</p>
+    <p>我是第二梯队</p>
+    <p>我是第二梯队</p>
+</div>
+
+</body>
+</html>
