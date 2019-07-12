@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d77_only_chirld_selector</title>
+    <style>
+        p:only-child{
+            color:red;
+        }
+        p:only-of-type{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<p>我不是子元素</p>
+<div>
+    <p>我是有一个元素的那个p标签</p>
+</div>
+<div>
+    <h1>我是有两个子元素的h1标签</h1>
+    <p>我是有两个子元素的那个p标签，作为对比</p>
+    <p>csd</p>
+</div>
+<div>
+    <h1>我是有一个子元素的h1标签</h1>
+</div>
+</body>
+
+</html>
