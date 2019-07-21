@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d80_attribute_selector_2</title>
+    <style>
+        p[id|=abcd]{color: red;}
+        p[id^=bcd]{color:blue;}
+
+        p[id$=efgh]{color: green;}
+
+        p[id~=cdoe]{color:aqua}
+        p[id*=cdp]{color:darkcyan}
+    </style>
+</head>
+<body>
+<p id="abcd-efg">优秀1</p>
+<p id="abcdefg">优秀2</p>
+<p id="bcd-efg">优秀3</p>
+<p id="bcdefg">优秀4</p>
+
+<p id="abcd-efgh">优秀5</p>
+<p id="abcd efgh">优秀5</p>
+<p id="abcdefgh">优秀6</p>
+
+<p id="ab cdoe fg">优秀7</p>
+<p id="abcdoefg">优秀8</p>
+<p id="abcdp-efg">优秀9</p>
+<p id="abcdpefg">优秀10</p>
+</body>
+</html>
