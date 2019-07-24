@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d82_selector_comprehensive_exercise</title>
+    <style>\
+        /*标签选择器*/
+        p{
+            color: red;
+        }
+        /*id选择器*/
+        #identity1{
+            color: green;
+        }
+        #identity2{
+            color: green;
+        }
+        /*class选择器*/
+        .para{
+            color: blue;
+         }
+        /*后代选择器*/
+        div p{
+            color: yellow;
+        }
+        /*子元素选择器*/
+        div>p{
+            color: red;
+        }
+        /*交集选择器*/
+        p.para{
+            color: green;
+        }
+        /*并集选择器*/
+        #identity1,#identity2{
+            color:wheat;
+        }
+        /*通用兄弟选择器*/
+        h1~p{
+            color: #37fa1e;
+        }
+        /*序选择器*/
+        p:nth-of-type(n+1){
+            color:green;
+        }
+        /*属性选择器*/
+        p[id]{
+            color: #ff4b54;
+        }
+    </style>
+</head>
+<body>
+<h1>我是标签</h1>
+<div>
+<p id="identity1" class="para">我是段落1</p>
+<p id="identity2" class="para">我是段落2</p>
+</div>
+</body>
+</html>
