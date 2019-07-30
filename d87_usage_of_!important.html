@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d87_usage_of_!important</title>
+    <style>
+        #odd{
+            color: red;
+        }
+        .jjj{
+            color:blue !important;
+        }
+        *{
+            color: yellow !important;
+        }
+    </style>
+</head>
+<body>
+<p id="odd" class="jjj">
+    我是用来让id选择器失效的，让class选择器优先级更高
+</p>
+</body>
+</html>
