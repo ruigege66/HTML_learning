@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d94_background_color_and_image_and_tile_way</title>
+    <style>
+        .p1{
+            height:1000px;
+            width: 600px;
+            background-color: red;
+            background-image:url("image/play_tennis.jpg");
+            /*background-repeat:repeat;!*默认情况下就是repeat,这个意思就是图片大小不变，铺满指定的区域即可*!*/
+            /*background-repeat: no-repeat;!*这个意思就是图片就铺一张，然后有地方没填上的就空着*!*/
+            background-repeat:repeat-x;
+        }
+        .p2{
+            background-color: red;
+        }
+        .p3{
+            background-color: rgba(0,0,255,1);
+        }
+        .p4{
+             background-color: #00ffff;
+         }
+    </style>
+</head>
+<body>
+<p class="p1">我是试练</p>
+<p class="p2">我是试练</p>
+<p class="p3">我是试练</p>
+<p class="p4">我是试练</p>
+
+
+</body>
+</html>
