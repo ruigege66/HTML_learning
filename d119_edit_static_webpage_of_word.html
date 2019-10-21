@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d119_edit_static_webpage_of_word</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+            margin: 0;
+            padding: 0
+        }
+        div{
+            margin:0 auto;
+            box-sizing: border-box;
+            width:372px;
+            height:232px;
+            border:1px solid #666;/*颜色中两位是一个颜色，应该有六位，但是如果两位一样则可以省略为一位，即这一行颜色全名为#666666*/
+            padding:15px;
+        }
+        h1{
+            font-family: "微软雅黑";
+            font-size:18px;
+            border-bottom:1px solid;
+            padding-bottom:10px;
+        }/*我们用div标签设置整体的布局，用span标签来设置里面细节的部分，如下设置NEW....*/
+        span{
+            font-size:14px;/*这里面还有优先级，小标签继承了大标签的特性，同时自己设置的属性又会覆盖原来继承的属性*/
+        }
+        ul{
+            list-style:None;/*这个我们复习了去掉行前面的小圆点*/
+            margin-top:10px;
+
+        }
+        ul li {
+            line-height:30px;/*复习了行高*/
+            border-bottom:1px dashed;
+            padding-left:20px;
+            font-size:12px;
+            font-family:"微软雅黑";
+            font-color:#242424;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>最新文章/<span>NEW Articles</span></h1>
+    <ul><!--这里还复习了条目的表示方法及其快捷键：ul>li*5再加tab-->
+        <li>优秀的国民</li>
+        <li>厉害的足球</li>
+        <li>富饶的江西</li>
+        <li>牛逼的赞800</li>
+        <li>还有无敌的我</li>
+    </ul>
+</div>
+</body>
+</html>
