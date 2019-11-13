@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D134_ClearFloatThree</title>
+
+    <style>
+        .box1{
+            background-color: red;
+            /*border:1px white solid;*/
+        }
+        .box2{
+            background-color: green;
+            /*border:1px white solid;*/
+        }
+        .box1 p{
+            width:100px;
+            background-color: blue;
+            float:left;
+        }
+        .box2 p{
+            width:100px;
+            background-color: red;
+            float:left;
+        }
+        .wall{
+            clear:both;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字2</p>
+    <p>我是文字3</p>
+</div>
+<div class="wall h20"></div><!--这里还复习了一个标签可以定义多个class属性的方式，多个属性可以统一设置样式-->
+<div class="box2">
+    <p>我是文字4</p>
+    <p>我是文字5</p>
+    <p>我是文字6</p>
+</div>
+</body>
+</html>
