@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D136_PseudoElementSelector</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+            background-color: red;
+
+        }
+        /*p{*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+            /*background-color: pink;*/
+        /*}*/
+        div::before{
+            content:"你是好儿女";
+            width:70px;
+            height: 70px;
+            background-color: blue;
+            display:block;/*如果不加这个显示的方式，那么上面设置宽高就不会生效*/
+        }
+        div::after{
+            content:"大家都很累";
+            width: 80px;
+            height: 80px;
+            display: block;
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--<p>爱你</p>-->
+    我是文字
+    <!--<p>不爱你</p>-->
+</div>
+</body>
+</html>
