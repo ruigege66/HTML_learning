@@ -7,10 +7,12 @@
         .header{
             width:960px;
             height:80px;
-            background-color: red;
+            /*background-color: red;*/
             margin: 0 auto;
             overflow: hidden;
-
+            padding-top:14px;
+            box-sizing: border-box;/*这里我们采用内上边距的办法将logo挤下去达到垂直居中的目的*/
+            /*同时这个box-sizing的属性就是将这个header固定住，不让他因为内边距而变化大小了*/
         }
         .content{
             width: 960px;
@@ -25,20 +27,64 @@
             background-color: yellow;
             margin: 0 auto ;
         }
-        .logo{
+        .header .logo{
             width:748px;
             height: 47px;
-            background:url("image/netEasyLogo.jpg");
-            margin-top: 12px;
+            background:url("image/netEasyLogo.jpg") no-repeat 0 0;/*从图片的坐标（0，0）开始铺，no-repeat就是只铺这一张不要多铺*/
+            /*margin-top: 12px;*/
+            float:left;
+        }
+        .header .links{
+            height: 42px;
+            width: 150px;
+            /*background-color: red;*/
+            float:right;
+        }
+        .header .logo a {
+            width:156px;
+            height:45px;/*测量出那一块区域，然后这一块区域都是超级链接*/
+            /*background-color: red;*/
+            display: inline-block;/*转换为行内块级标签*/
+        }
+        .header .links a{
+            text-decoration:none;/*去掉下划线*/
+            font-size: 16px;
+            color:black;
+            line-height: 45px;/*这里复习了文字不能居中，使用这个属性让它和links盒子的高度一致，那就做到文字在盒子中居中*/
+            text-align: right;/*复习了文字右对齐*/
+        }
+        .content{
+            width: 960px;
+            height: 600px;
+
+        }
+        .content .top{
+            width: 960px;
+            height: 38px;
+            background-color: red;
+            background: url("image/wangyi_center.jpg") 0 0;/*让这张小图片把top这个区域全部铺满*/
+        }
+        .content .bottom{
+            width: 960px;
+            height: 562px;
+            background-color: green;
         }
     </style>
 </head>
 <body>
 <div class="header">
-    <div class="logo" ></div>
-    div.
+    <div class="logo" >
+        <a href="https://www.163.com/" title="网易163免费邮箱"></a><a href="https://www.126.com/" title="网易126免费邮箱"></a><a href="#" title="网易yeah免费邮箱"></a>
+        <!--复习了a标签的使用，title就是指鼠标放到超链接上就会显示的文字-->
+    </div>
+    <div class="links">
+        <a href="http://www.baidu.com">了解更多</a>|<a href="#">反馈意见</a>
+    </div>
 </div>
-<div class="content"></div>
+<div class="content">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
 <div class="footer"></div>
 </body>
 </html>
