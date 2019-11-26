@@ -61,13 +61,46 @@
         .content .top{
             width: 960px;
             height: 38px;
-            background-color: red;
+            /*background-color: red;*/
             background: url("image/wangyi_center.jpg") 0 0;/*让这张小图片把top这个区域全部铺满*/
         }
         .content .bottom{
             width: 960px;
             height: 562px;
-            background-color: green;
+            /*background-color: green;*/
+        }
+        /*下面这两个属性设置，就是为了content的top部的两边能使用我们指定的格式，我们采用的盒子嵌套盒子来进行背景的演示*/
+        .content .top .left{
+            width:960px;
+            height: 38px;
+            background:url("image/line_left.jpg") no-repeat left 0 ;
+            /*display: inline;*/
+        }
+        .content .top .left .right{
+            width:960px;
+            height: 38px;
+            background:url("image/line_left.jpg") no-repeat right 0 ;
+        }
+        .content .top .left .right h3{
+            color: white;
+            line-height:38px;/*设置行高就是为了让文字能够在top条中垂直居中*/
+            text-align: center;/*文字水平居中,当然我们也可以设置margin-left来设置左边距，但是一旦分辨率改变将导致网页变形*/
+        }
+        .content .bottom .article{
+            width:638px;
+            height: 562px;
+            background-color: red;
+            float:left;/*这里填写了这个float属性才行，并且右面的盒子也需要float属性，div是行内标签，不写float会另起一行*/
+
+        }
+        .content .bottom .aside{
+            width: 320px;/*这里我们本来写的322,但是发现写上322就会造成aside这个图片溢出到下面了，原来是左边距有2px.这样*/
+            /*320+2+638=960就正好了，溢出原因就是float属性导致的，达到了962，就装不下了*/
+            height: 562px;
+            /*background-color: green;*/
+            background:url("image/content_aside.jpg") no-repeat 0;
+            float:right;
+            border-left:2px black solid;
         }
     </style>
 </head>
@@ -82,8 +115,15 @@
     </div>
 </div>
 <div class="content">
-    <div class="top"></div>
-    <div class="bottom"></div>
+    <div class="top">
+        <div class="left">
+            <div class="right"><h3>欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下的产品</h3></div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="article"></div>
+        <div class="aside"></div>
+    </div>
 </div>
 <div class="footer"></div>
 </body>
