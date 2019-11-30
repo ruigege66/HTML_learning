@@ -19,7 +19,7 @@
             height: 600px;
             background-color: blue;
             margin: 0 auto;
-
+​
         }
         .footer{
             width: 960px;
@@ -56,7 +56,7 @@
         .content{
             width: 960px;
             height: 600px;
-
+​
         }
         .content .top{
             width: 960px;
@@ -91,7 +91,11 @@
             height: 562px;
             background-color: red;
             float:left;/*这里填写了这个float属性才行，并且右面的盒子也需要float属性，div是行内标签，不写float会另起一行*/
-
+            box-sizing: border-box;/*这个设置是为了让外面的大盒子不会因为设置内边距，而导致外面的的大盒子变形*/
+            padding-top:50px;/*这里我们设置了内边距，那么里面的内容就可以从这里面进行配置了，一开始我想到的是不设置这个内边距*/
+            /*让里面的东西有外边距，当然这样也可以达到效果，但是有一个缺点，里面的每一个盒子都要单独设置外边距，相比设置*/
+            /*外面盒子的内边距会更加省力，而且里面的内容，自然而然就会对齐*/
+            padding-left: 80px;
         }
         .content .bottom .aside{
             width: 320px;/*这里我们本来写的322,但是发现写上322就会造成aside这个图片溢出到下面了，原来是左边距有2px.这样*/
@@ -102,7 +106,57 @@
             float:right;
             border-left:2px black solid;
         }
-    </style>
+        .content .article .articletop{
+            width: 560px;
+            height: 60px;
+            /*background-color: yellow;*/
+​
+        }
+        .content .article .articletop ul{
+            width: 511px;
+            height: 34px;
+            /*background-color: tomato;*/
+            list-style:none;/*这个属性是为了去掉li的小圆点*/
+​
+        }
+        .content .article .articletop ul li{
+            float:left;
+            width: 137px;
+            height: 34px;
+            /*background-color: skyblue;*/
+            line-height: 37px;
+            text-align: center;/*文字水平居中*/
+            background:url("image/content_article.jpg") 0 0;
+            border:1px solid black;
+        }
+        .content .article .articlebottom{
+            width: 560px;
+            height: 373px;
+            background-color: white;
+        }
+        .content .article .articlebottom .line{
+            width: 413px;
+            height: 28px;
+            background-color: yellow;
+        }
+        .content .article .articlebottom .line span{
+            float:left;
+            height: 28px;
+            width: 60px;
+            font-size:12px;
+            line-height:28px;
+            text-align:left;
+        }
+        .content .article .articlebottom .line .star{
+            width: 6px;
+            float:left;
+        }
+        .content .article .artilclebottom .line div{
+            float: left;
+            height: 28px;
+            height: 333px;
+        }
+</style>
 </head>
 <body>
 <div class="header">
@@ -121,7 +175,21 @@
         </div>
     </div>
     <div class="bottom">
-        <div class="article"></div>
+        <div class="article">
+            <div class="articletop">
+                <ul>
+                    <li>注册字母邮箱</li><!--看到导航条就应该想到ul.li-->
+                    <li>注册手机号邮箱</li>
+                    <li>注册VIP邮箱</li>
+                </ul>
+            </div>
+            <div class="articlebottom">
+                <div class="line">
+                    <span class="star">*</span><!--这里的星号代表必填项--><span>邮箱地址</span>
+                    <div></div>
+                </div>
+            </div>
+        </div>
         <div class="aside"></div>
     </div>
 </div>
