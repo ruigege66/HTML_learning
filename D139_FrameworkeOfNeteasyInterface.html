@@ -19,7 +19,7 @@
             height: 600px;
             background-color: blue;
             margin: 0 auto;
-​
+
         }
         .footer{
             width: 960px;
@@ -56,7 +56,7 @@
         .content{
             width: 960px;
             height: 600px;
-​
+
         }
         .content .top{
             width: 960px;
@@ -110,14 +110,14 @@
             width: 560px;
             height: 60px;
             /*background-color: yellow;*/
-​
+
         }
         .content .article .articletop ul{
             width: 511px;
             height: 34px;
             /*background-color: tomato;*/
             list-style:none;/*这个属性是为了去掉li的小圆点*/
-​
+
         }
         .content .article .articletop ul li{
             float:left;
@@ -137,12 +137,12 @@
         .content .article .articlebottom .line{
             width: 413px;
             height: 28px;
-            background-color: yellow;
+            /*background-color: yellow;*/
         }
         .content .article .articlebottom .line span{
             float:left;
             height: 28px;
-            width: 60px;
+            width: 80px;
             font-size:12px;
             line-height:28px;
             text-align:left;
@@ -156,7 +156,20 @@
             height: 28px;
             height: 333px;
         }
-</style>
+        .content .bottom .articlebottom .line input{
+            width: 214px;
+            height: 18px;
+        }
+        .content .bottom .articlebottom .line select{
+            width: 80px;
+            height: 24px;
+        }
+        .content .bottom .articlebottom p{
+            /*text-align: left;*/
+            font-size: 12px;
+            margin-left: 110px;
+        }
+    </style>
 </head>
 <body>
 <div class="header">
@@ -186,7 +199,43 @@
             <div class="articlebottom">
                 <div class="line">
                     <span class="star">*</span><!--这里的星号代表必填项--><span>邮箱地址</span>
-                    <div></div>
+                    <div>
+                        <input type="text" value="建议手机号码注册">@
+                        <select>
+                            <option value="163.com">163.com</option><!--复习了选项的标签select和Option,这里的value是传给浏览器的-->
+                            <option value="126.com">126.com</option>
+                            <option value="lnj.net">lnj.net</option>
+                        </select>
+                    </div>
+                </div>
+                <p>6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+                <div class="line">
+                    <span class="star">*</span><span>密码</span>
+                    <div>
+                        <input type="password">
+                    </div>
+
+                </div>
+                <p>6~16个字符，区分大小写</p>
+                <div class="line">
+                    <span class="star">*</span><span>再次确认密码</span>
+                    <div>
+                        <input type="password"><!--这里复习了密码的输入方法-->
+                    </div>
+                </div>
+                <p>请再次填写密码</p>
+                <dic class="line">
+                    <span class="star">*</span><span>手机号码</span>
+                    <div>
+                        <input type="number">
+                    </div>
+                </dic>
+                <p>输入手机号</p>
+                <div class="line">
+                    <span class="star">*</span><span>验证码</span>
+                    <div>
+                        <input type="text"><img src="image/yanzhengma.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
