@@ -17,14 +17,14 @@
         .content{
             width: 960px;
             height: 600px;
-            background-color: blue;
+            /*background-color: blue;*/
             margin: 0 auto;
 
         }
         .footer{
             width: 960px;
             height: 48px;
-            background-color: yellow;
+            /*background-color: yellow;*/
             margin: 0 auto ;
         }
         .header .logo{
@@ -63,24 +63,26 @@
             height: 38px;
             /*background-color: red;*/
             background: url("image/wangyi_center.jpg") 0 0;/*让这张小图片把top这个区域全部铺满*/
+            /*border: solid black 1px;*/
         }
         .content .bottom{
             width: 960px;
             height: 562px;
             /*background-color: green;*/
+            border: solid black 1px;
         }
         /*下面这两个属性设置，就是为了content的top部的两边能使用我们指定的格式，我们采用的盒子嵌套盒子来进行背景的演示*/
-        .content .top .left{
-            width:960px;
-            height: 38px;
-            background:url("image/line_left.jpg") no-repeat left 0 ;
-            /*display: inline;*/
-        }
-        .content .top .left .right{
-            width:960px;
-            height: 38px;
-            background:url("image/line_left.jpg") no-repeat right 0 ;
-        }
+        /*.content .top .left{*/
+            /*width:960px;*/
+            /*height: 38px;*/
+            /*background:url("image/line_left.jpg") no-repeat left 0 ;*/
+            /*!*display: inline;*!*/
+        /*}*/
+        /*.content .top .left .right{*/
+            /*width:960px;*/
+            /*height: 38px;*/
+            /*background:url("image/line_left.jpg") no-repeat right 0 ;*/
+        /*}*/
         .content .top .left .right h3{
             color: white;
             line-height:38px;/*设置行高就是为了让文字能够在top条中垂直居中*/
@@ -89,7 +91,7 @@
         .content .bottom .article{
             width:638px;
             height: 562px;
-            background-color: red;
+            /*background-color: red;*/
             float:left;/*这里填写了这个float属性才行，并且右面的盒子也需要float属性，div是行内标签，不写float会另起一行*/
             box-sizing: border-box;/*这个设置是为了让外面的大盒子不会因为设置内边距，而导致外面的的大盒子变形*/
             padding-top:50px;/*这里我们设置了内边距，那么里面的内容就可以从这里面进行配置了，一开始我想到的是不设置这个内边距*/
@@ -169,6 +171,35 @@
             font-size: 12px;
             margin-left: 110px;
         }
+        .content .bottom .articlebottom .service{
+            /*text-align: left;*/
+            margin-top: 50px;
+            font-size: 12px;
+            margin-left: 40px;
+        }
+
+        .content .bottom .articlebottom  input[type=submit]{/*这里复习了，另一种CSS定位的形式，对于input标签可以使用这种方式来单独进行定位，而不需要使用class属性来进行设置属性*/
+            width:119px;
+            height: 37px;
+            background-color: #51ad3b;
+            margin-left: 40px;
+            border: none;/*复习了去掉边框的方式*/
+        }
+        .footer p{
+            text-align: center;
+        }
+
+
+
+        /*复习一下清空默认样式
+        a{
+            text-decoration:none;}
+        ul,ol{
+            list-style:none:}
+
+         利用body可以用来设置整个界面的文字信息，文字大小，文字颜色，文字样式，可以节约很多代码
+         */
+
     </style>
 </head>
 <body>
@@ -234,14 +265,22 @@
                 <div class="line">
                     <span class="star">*</span><span>验证码</span>
                     <div>
-                        <input type="text"><img src="image/yanzhengma.jpg" alt="">
+                        <input type="text" class="yanzhengma"><img src="image/yanzhengma.jpg" alt="">
                     </div>
                 </div>
+                <p class="service">
+                    <input type="checkbox" checked="checked"><!--复习了多选框的类型为checkbox,并且多选框是默认选中的-->
+                    同意<a href="#">《服务条款》</a>、<a href="#">《隐私政策》</a>和<a href="#">《儿童隐私政策》</a>
+                </p>
+                <input class="submitbutton" type="submit" value="立即注册"><!--复习了提交按钮的类型，以及按钮里面的值-->
             </div>
         </div>
         <div class="aside"></div>
     </div>
 </div>
-<div class="footer"></div>
+<div class="footer">
+    <p><a href="#">关于网易</a> <a href="#">客户服务 </a> <a href="#">隐私政策</a> | 网易公司版权所有 © 1997-2019</p>
+    <p>数据来源：艾媒咨询《2015-2018中国个人邮箱行业研究报告》</p>
+</div>
 </body>
 </html>
