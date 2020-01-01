@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D155_GroupPurchase</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        div{
+            width: 500px;
+            height: 550px;
+            border:1px black solid;
+            margin:0 auto;
+            margin-top:100px;
+            position:relative;/*这里想要利用子绝父相来进行排版图片的商标和配置的信息*/
+        }
+        div img{
+            width: 500px;
+            height: 500px;
+        }
+        div .brand{
+            width: 111px;
+            height: 29px;
+            background: url("image/laptop_label.jpg") no-repeat -21px -12px;
+            position:absolute;
+            left: 20px;
+            top:0px;
+        }
+        div .configuration{
+            width: 435px;
+            height: 40px;
+            background:url("image/laptop_label.jpg") no-repeat -78px -515px;
+            position:absolute;
+            left:20px;
+            top:505px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="image/laptop.jpg" alt="">
+    <span class = "brand"></span>
+    <span class = "configuration"></span>
+</div>
+
+</body>
+</html>
