@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D154_CenterHorizontally</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style:none;
+            width:800px;
+            height:50px;
+            background-color: red;
+            margin:0 auto;
+        }
+        ul li{
+            float:left;
+            width:100px;
+            height: 50px;
+            text-align:center;
+            background-color: yellow;
+            line-height: 50px;
+            /*border:1px black solid;*/
+        }
+        ul li:nth-of-type(4){
+            background-color: blue;
+            position:relative;
+        }
+        ul li img{
+            position:absolute;
+            /*left: 41px;*/
+            left:50%
+            /*margin-left:-10px;*/
+            top: 1px;
+            width: 20px;
+            height: 16px;
+
+        }
+        div{
+            width:50px;/*如果数值为100%，就代表这个div的宽度就是浏览器的整个宽度*/
+            height:50px;
+            background-color: red;
+            position:absolute;
+            left:50%;/*使用百分比意味着这个绝对定位的块左边距离浏览器一半的距离*/
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>拍卖金融</li>
+    <li>美妆馆</li>
+    <li>京东超市</li>
+    <li>
+        全球购<img src="bear.jpg">
+    </li>
+    <li>闪购</li>
+    <li>团购</li>
+    <li>拍卖</li>
+    <li>合拍</li>
+</ul>
+
+<div></div>
+</body>
+</html>
