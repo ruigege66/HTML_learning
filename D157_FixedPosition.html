@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D157_FixedPosition</title>
+    <style>
+        .duibi{
+            width: 600px;
+            height: 2000px;
+            border:2px solid #000;
+            background-image: url("image/play_tennis.jpg") ;
+            background-repeat: no-repeat;/*背景图片不会重复*/
+            background-attachment: fixed;/*这个属性复习了，背景图片设置为fixed后，就不会随着页面上下滚动而滚动了，这张图片会固定位置*/
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position:fixed;/*脱离了标准流了，所以在标准流中就好像没有他一样*/
+        }
+        .box3{
+            border:2px black solid;
+            width: 200px;
+            height: 1000px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="duibi"></div>
+
+<div class="box3">
+    <div class="box4"></div>
+</div>
+
+</body>
+</html>
