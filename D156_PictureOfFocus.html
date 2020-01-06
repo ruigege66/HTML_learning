@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D156_PictureOfFocus</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width: 639px;
+            height: 338px;
+            boder:2px black solid;
+            margin:0 auto;
+            margin-top: 100px;
+            position:relative;
+            left:0px;
+            top:0px;
+        }
+        span{
+            width: 40px;
+            height: 80px;/*行内标签设置大小是没有用的，必须先转换为行内块级标签*/
+            display:inline-block;
+            background-color: rgba(0,0,0,0.3);/*复习了rgba的最后一个参数是透明度*/
+            font-size:50px;/*设置大于号小于号的颜色和大小*/
+            color:white;
+
+        }
+        ol{
+            list-style: none;/*去掉有序标签的默认样式*/
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0,0,0,0.3);
+            float:right;
+            /*position:absolute;*/
+        }
+        ol li{
+            width: 40px;
+            height: 40px;
+            border:2px solid gold;
+            box-sizing: border-box;/*防止里面的内容变化而导致外面的盒子大小样式被破坏*/
+            text-align: center;
+            display: inline-block;
+            /*float:right;*/
+
+        }
+        div .leftArrow{
+            position:absolute;
+            left:0px;
+            top:128px;
+        }
+        div .rightArrow{
+            position:absolute;
+            left:600px;
+            top:128px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="image/taobaoFocusPicture.jpg" alt="">
+    <span class="leftArrow">&lt;</span><!--这里复习了大于号小于号的表示方法-->
+    <span class="rightArrow">&gt;</span>
+    <ol><!--复习了有序标签ol，无序标签是ul-->
+        <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>
+    </ol>
+</div>
+</body>
+</html>
