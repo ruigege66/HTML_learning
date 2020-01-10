@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D158_ExerciseOfLocation</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .nav{
+            width: 100%;
+            height: 45px;
+            background-color: red;
+            background:url("image/play_tennis.jpg");
+             position:fixed;/*复习了固定定位，这个导航条就会固定到浏览器中不会随网页滚动而滚动了，兵器也脱脱离的标准流*/
+        }
+        .content{
+            width: 100%;
+            height: 2500px;
+            background-color: yellow;
+            background:url("image/laptop.jpg");
+        }
+        .backup{
+            width: 50px;
+            /*height: 50px;*/
+            background-color: red;
+            position:fixed;
+            right: 10px;
+            bottom:10px;
+            text-align: center;
+            text-decoration: none;/*去掉下面的线*/
+            line-height: 50px;/*行高可以撑起盒子的高度*/
+        }
+    </style>
+</head>
+<body>
+<div class="nav"></div>
+<div class="content"></div>
+<div class="backup"><a href="#">返回</a></div>
+</body>
+</html>
