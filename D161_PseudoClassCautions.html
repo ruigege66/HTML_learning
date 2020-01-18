@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> D161_PseudoClassCautions</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width:960px;
+            height:40px;
+            background-color: green;
+            margin:100px auto;
+        }
+        li{
+            width:120px;
+            height:40px;
+            list-style: none;/*去掉前面的小黑点*/
+            float:left;
+            background-color: purple;
+            text-align: center;/*文字的水平排版*/
+            line-height:40px;/*文字行高和该行一样高*/
+            color:black;
+
+        }
+        ul li a {
+            /*这个a标签这里设置了它的大小，可以理解为作用域变成和li一样大，因为我们想要让
+            整个小盒子都是作用域，如果不写这段大小设置的话，那么作用域就只有文字大小了*/
+            width:120px;
+            height: 40px;
+            display:inline-block;
+        }
+        ul li a:link{
+            color:white;
+            text-decoration:none;/*去掉文字下划线*/
+            background-color: pink;/*这里讲解一个方法：就是如何判断作用域，我们可以采用加个背景颜色的方法，来进行判断*/
+        }
+        ul li a:hover{
+            color:red;
+            background-color: grey;
+
+        }
+        ul li a:active{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+    <li><a href="#">我是导航条</a></li>
+</ul>
+</body>
+</html>
