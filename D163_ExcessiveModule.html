@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> D163_ExcessiveModule </title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		div{
+			width:100px;
+			height:50px;
+			background:red;
+			
+		}
+		div:hover{
+			width:300px;
+			height:300px;
+			background-color:blue;
+			/*告诉系统哪个属性将会使用过渡效果*/
+			transition-property:width,height,background-color;
+			/*告诉系统这个过渡效果需要持续多久*/
+			transition-duration:0.4s,0.8s,4s;
+			/*告诉系统演出多少秒后再执行过渡动画*/
+			transition-delay:2s;
+			/**/
+			transition-
+		}
+		ul{
+			width:800px;
+			height:500px;
+			margin:0 auto;
+			background-color:pink;
+		}
+		ul li {
+			list-style:none;
+			width:100px;
+			height:50px;
+			margin-top:50px;
+			background-color:green;
+			transition-property:margin-left;
+			transition-duration:2s;
+			
+		}
+		ul:hover li{
+			margin-left:700px;	
+		}
+		ul li:nth-child(1){
+			/*该属性用于控制动画运动速度的*/
+			transition-timing-function:linear;
+
+		}
+		ul li:nth-child(2){
+			transition-timing-function:ease;
+		}
+		ul li:nth-child(3){
+			transition-timing-function:ease-in;
+		}
+		ul li:nth-child(4){
+			transition-timing-function:ease-out;
+		}
+		ul li:nth-child(5){
+			transition-timing-function:ease-in-out;
+		}
+		
+	</style>
+</head>
+<body>
+<div>
+</div>
+<ul>
+	<li>linear</li>
+	<li>ease</li>
+	<li>ease-in</li>
+	<li>ease-out</li>
+	<li>ease-in-out</li>
+</ul>
+</body>
+</html>
