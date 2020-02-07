@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D165_TransitionModuleWritingContinuely</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            /*transition-property: width;*/
+            /*transition-duration: 5s;*/
+            /*transition:width 1s linear 1s,background-color 2s linear 1s;*/
+            transition:all 1s;
+        }
+        div:hover{
+            width: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--
+1.过渡连写格式：过渡属性  过渡时长  运动速度  延迟时间；
+2.过渡连写注意点：
+（1）和分开写一样，如果想要多个属性添加过渡效果，也是使用逗号来隔开即可。
+（2）连写的时候可以省略后面的两个参数，因为只要编写了前面的两个参数就已经满足了过渡的三要素。
+（3）如果多个属性运动的速度/延迟的时间/持续的时间都一样，那么可以简写为
+transition:all 0s
+-->
+<div></div>
+</body>
+</html>
