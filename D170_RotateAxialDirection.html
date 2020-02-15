@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D170_RotateAxialDirection</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width: 800px;
+            height: 500px;
+            border:1px solid black;
+            margin:0 auto;
+
+        }
+        ul li {
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            margin:0 auto;
+            margin-top:50px;
+            border:1px solid black;
+
+        }
+        ul li image{
+            width: 200px;
+            height: 200px;
+        }
+        ul li:nth-child(1){
+            /*默认情况下所有的元素都是围绕Z轴进行旋转的*/
+            transform:rotateZ(45deg);
+        }
+        ul li:nth-child(2){
+            /*默认情况下所有的元素都是围绕Z轴进行旋Y转的*/
+            transform:rotateX(45deg);
+        }
+        ul li:nth-child(3){
+            /*默认情况下所有的元素都是围绕Z轴进行旋转的*/
+            transform:rotateY(45deg);
+        }
+        /*总结:想要围绕哪个轴旋转,那么只需要在rotate后面加上哪个轴即可*/
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="image/play_tennis.jpg" alt=""></li>
+    <li><img src="image/play_tennis.jpg" alt=""></li>
+    <li><img src="image/play_tennis.jpg" alt=""></li>
+</ul>
+</body>
+</html>
