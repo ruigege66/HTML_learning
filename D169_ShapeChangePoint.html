@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D169_ShapeChangePoint</title>
+    <style>
+        ul li {
+            width: 100px;
+            height: 100px;
+            list-style: none;
+            float:left;
+            margin:0 auto;
+            /*transform-origin:200px 0px;*/
+            transform-origin:80% 80%;
+            /*第一个参代表水平方向，第二个参数代表垂直方向，注意点：取值有三种形式，具体像素，百分比*/
+        }
+        ul li:nth-child(1){
+            /*默认情况下，所有的元素都是以自己的中心点进行旋转的,我们可以通过改变形变的中心点*/
+            background-color: red;
+            transform:rotate(30deg);
+        }
+        ul li:nth-child(2){
+            background-color: green;
+            transform:rotate(60deg);
+        }
+        ul li:nth-child(3){
+            background-color: blue;
+            transform:rotate(110deg);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
