@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D171_PerspectiveAttribute</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width: 800px;
+            height: 500px;
+            border:1px solid black;
+            margin:0 auto;
+            perspective:80px;
+        }
+        ul li {
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            margin:0 auto;
+            margin-top:50px;
+            border:1px solid black;
+            perspective:80px;
+        }
+        ul li image{
+            width: 200px;
+            height: 200px;
+            perspective:80px;
+        }
+        ul li:nth-child(1){
+            /*默认情况下所有的元素都是围绕Z轴进行旋转的*/
+            /*transform:rotateZ(5deg);*/
+            perspective:80px;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="image/play_tennis.jpg" alt=""></li>
+    <!--<li><img src="image/play_tennis.jpg" alt=""></li>-->
+    <!--<li><img src="image/play_tennis.jpg" alt=""></li>-->
+</ul>
+</body>
+</html>
