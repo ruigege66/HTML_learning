@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D173_ShadowOfBoxAndWord</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            margin:20px auto;
+            background-color: red;
+            border:1px solid black;
+            text-align: center;
+            line-height:200px;
+            font-size:30px;
+            box-shadow:10px 10px 10px 0px black;/*水平偏移  垂直偏移  模糊度  阴影扩展  阴影颜色  内外阴影*/
+            text-shadow:3px 3px 3px blue;
+        }
+    </style>
+</head>
+<body>
+<div>我是盒子</div>
+</body>
+</html>
