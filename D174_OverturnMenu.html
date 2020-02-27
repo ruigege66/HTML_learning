@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D174_OverturnMenu</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width: 400px;
+            height: 40px;
+            margin:0 auto;
+            margin-top: 100px;
+            background-color: yellow;
+        }
+        .nav>li {
+            list-style: none;
+            float:left;
+            width: 120px;
+            height: 40px;
+            margin-left:10px;
+            background-color: green;
+            line-height: 40px;
+            text-align: center;
+        }
+        .sub{
+            /*display: none;!*代表不显示元素*!*/
+        }
+        .sub>li{
+            list-style: none;
+            background-color: red;
+            transform:rotateY(180deg);
+            transition:all;
+            /*opacity: 0;!*透明度，取值0-1*!*/
+
+        }
+        .nav>li:hover .sub li{
+            transform:none;
+        }
+        .nav>li:hover .sub li:nth-child(1){
+            transform:none;
+            transition-delay:200ms;
+        }
+        .nav>li:hover .sub li:nth-child(2){
+            transform:none;
+            transition-delay:400ms;
+        }
+        .nav>li:hover .sub li:nth-child(3){
+            transform:none;
+            transition-delay:600ms;
+        }
+        .nav>li .sub li:nth-child(3){
+            transform:none;
+            transition-delay:200ms;
+        }
+        .nav>li .sub li:nth-child(2){
+            transform:none;
+            transition-delay:400ms;
+        }
+        .nav>li .sub li:nth-child(1){
+            transform:none;
+            transition-delay:600ms;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav" >
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单</li>
+    <li>一级菜单</li>
+</ul>
+</body>
+</html>
