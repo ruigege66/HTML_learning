@@ -1,0 +1,15 @@
+import requests
+
+#创建session对象，可以暴捶cookie的值
+ss = requests.session()
+
+headers = {"User-Agent":"xxxxxxxxxxxxxxxxxxxxxxxxx"}
+
+data = {"name":"xxxxxxxxxxxxxxxxxxxxxx"}
+
+#此时，由创建的session管理请求，负责发出请求
+ss.post("http://www.baidu.com",data=data,headers=headers)
+rsp = ss.get("xxxxxxxxxxxxx")
+
+rsp1 = requests.get("https://www.baidu.com",verify=False)
+#如果用verify=True访问12306,会报错，因为它的证书有问题
