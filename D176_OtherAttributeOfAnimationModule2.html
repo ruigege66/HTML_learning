@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D176_OtherAttributeOfAnimationModule2</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box1{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            animation-name:sport;
+            animation-duration:2s;
+        }
+        @keyframes sport {/*这里的百分比代表占用的时间*/
+            0%{
+                margin-left:0px;
+                margin-top:0px;
+            }
+            10%{
+                margin-left: 300px;
+                margin-top:0px;
+            }
+            20%{
+                margin-left:300px;
+                margin-top:300px;
+            }
+            30%{
+                margin-left:0px;
+                margin-top:300px;
+            }
+            100%{
+                margin-left:0px;
+                margin-top:0px;
+            }
+        }
+
+        .box2{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            margin:100px auto;
+            animation-name:sport2;
+            animation-duration:2s;
+            animation-fill-mode:backwards;
+            animation-delay:2s;
+        }
+        @keyframes sport2 {
+            0%{
+                tranform:rotate(10deg);
+            }
+            25%{
+                transform:rotate(45deg);
+            }
+            50%{
+                transform:rotate(79deg);
+            }
+            100%{
+                transform:rotate(160deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
