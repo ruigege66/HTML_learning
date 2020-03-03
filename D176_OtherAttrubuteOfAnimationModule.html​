@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D176_OtherAttrubuteOfAnimationModule</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            animation-name:sport;
+            animation-duration: 1s;
+            animation-delay:1s;/*动画执行前的延迟时间*/
+            animation-timing-function:linear;/*动画持续的速度函数类型*/
+            animation-iteration-count:3;/*动画执行的次数*/
+            animation-direction:alternate;/*动画执行循环往复，循环往复一次是算两次动画效果的，如果使用normal，那么就是重复动画而已，默认是此值*/
+            animtion-play-state:running;/*默认是running,也就是执行动画*/
+        }
+        @keyframes sport {
+            from{
+                margin-left:0px;
+            }
+            to{
+                margin-left:500px;
+            }
+        }
+        div:hover{
+            /*告诉系统当前动画是否需要暂停*/
+            animation-play-state:paused;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
