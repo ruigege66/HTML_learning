@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D179_CloudAnimation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            height: 396px;
+            background-color: skyblue;
+            margin-top:100px;
+            animation:change 5s linear 0s infinite alternate;/*infinite代表无限次的执行难下去*/
+            position:relative;
+
+        }
+        ul li {
+            width: 400%;/*复习了百分比的表示方式,这个四百很重要*/
+            /*因为有三个li标签，并且宽度变化最多是三倍，因此，我们的li需要有四倍，完成它的延展长度*/
+            height: 350px;
+            position:absolute;
+            left:0;
+            top:22px;
+            list-style: none;
+
+
+        }
+        ul li:nth-child(1){
+            background-image: url("image/play_tennis2.jpg");
+            animation:one 10s linear 0s infinite alternate;
+        }
+        ul li:nth-child(2){
+            background-image: url("image/play_tennis2.jpg");
+            animation:two 10s linear 0s infinite alternate;
+        }
+        ul li:nth-child(3){
+            background-image: url("image/play_tennis2.jpg");
+            animation:three 10s linear 0s infinite alternate;
+        }
+        @keyframes change {
+            form{
+                background-color: skyblue;
+            }
+            to {
+                background-color: grey;
+            }
+        }
+        @keyframes one {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left:-100%;/*这里都是反向移动也就是向左移动，如果向右移动，那么左边就会有空白出现了*/
+            }
+        }
+        @keyframes two {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left:-200%;
+            }
+        }
+        @keyframes three {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left:-300%;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
