@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D178_AnimationWritingContinuely</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            animation:move 1s linear 1s 2 normal;
+            /*动画名称 持续时间 运动速度  延迟时间  重复次数  是否循环往复*/
+        }
+        @keyframes move{
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left:500px;
+             }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
