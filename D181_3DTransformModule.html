@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D181_3DTransformModule</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border:1px solid black;
+            margin:100 auto;
+            perpective:500px;/*透视效果*/
+            transform: rotateY(80deg);
+            transform-style:preserve-3d;/*所有的子元素转换为3D元素*/
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border:1px solid black;
+            margin:0 auto;
+            margin-top:50px;
+            transform:rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>
