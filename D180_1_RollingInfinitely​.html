@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D180_1_RollingInfinitely</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        div{
+            width: 600px;
+            height: 188px;
+            boder:1px solid black;
+            margin:100px auto;
+            overflow: hidden;/*这里复习了overflow：hidden的使用方法，代表的是出了div这个边框的东西都看不到了*/
+
+        }
+        ul{
+            width: 2000px;
+            height: 188px;
+            background-color: black;
+            animation:move 5s linear infinite;/*动画名称 持续时间 速度函数 延迟时间 循环次数  循环样式*/
+        }
+        @keyframes move {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left:-1200px;/*这个数字很重要，我们想要看到无限张图片连环的话*/
+                /*就得多加几个li的前面的元素，这样移动起来才能无缝衔接起来*/
+            }
+        }
+        ul li{
+            list-style:none;
+            width: 300px;
+            height: 188px;
+            background-color:red;
+            border:1px solid black;
+            box-sizing:border-box;
+            float:left;
+        }
+        image{
+            width: 100%;
+            height:100%;
+
+        }
+        ul:hover{
+            animation-play-state:paused;/*复习了一旦鼠标碰触图片的话，就会停止的属性*/
+        }
+        ul:hover li{
+            /*给没有选中的图片添加蒙版,注意蒙版是用于ul标签的背景颜色的百分比展示来达到的，这里就是百分之五十的黑色*/
+            opacity:0.5;
+        }
+        ul li:hover{
+            opacity:1;/*这个优先级会更高，一是因为这里是具体指定某个属性的演示，二是因为我们就是想让选中的图片不会产生蒙版效应*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><img src="image/laptop.jpg" alt=""></li>
+        <li><img src="image/play_tennis2.jpg" alt=""></li>
+        <li><img src="image/example1.jpg" alt=""></li>
+        <li><img src="image/line_left.jpg" alt=""></li>
+        <li><img src="image/laptop.jpg" alt=""></li>
+        <li><img src="image/play_tennis2.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>
