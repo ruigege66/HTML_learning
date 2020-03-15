@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D183_CubeOf3DTransformModule</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing:border-box;
+            margin:100px auto;
+            position:relative;
+            transform: rotateY(0deg) rotateX(0deg);
+            transform-style: preserve-3d;/*转换成一个3D的面*/
+
+        }
+        li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            text-align:center;
+            line-height:200px;
+            font-size:60px;
+            position:absolute;
+        }
+        ul li:nth-child(1){
+            background-color: red;
+            transform:translate(-100px) rotateY(-90deg);
+
+        }
+        ul li:nth-child(2){
+            background-color: blue;
+            transform:translate(100px) rotateY(90deg);/*复习了translate是左右平移,可指定按照哪个轴平移，比如transformY就是上下平移*/
+        }
+        ul li:nth-child(3){
+            background-color: purple;
+            transform:translateY(100px) rotateX(-90deg);
+        }
+        ul li:nth-child(4){
+            background-color: pink;
+            transform:translateY(-100px) rotateX(90deg);
+        }
+        ul li:nth-child(5){
+            background-color: white;
+            transform:translateZ(100px) rotateX(0deg);
+        }
+        ul li:nth-child(6){
+            background-color: yellow;
+            transform:translateZ(-100px) rotateX(-180deg);
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <!--这里的六个li代表的就是正方体的六个面-->
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>
