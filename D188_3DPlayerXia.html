@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D188_3DPlayerXia</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background:url("image/taobaoFocusPicture.jpg") no-repeat;
+            background-size:cover;/*这个属性表示我们的图片肯定会填满整个网页，无论图片的大小*/
+            overflow:hidden;/*代表的就是超出屏幕不会出现滚动条*/
+        }
+        ul{
+            height: 200px;
+            width: 200px;
+            /*background-color: red;*/
+            top:150px;
+            position:absolute;
+            left:50%;
+            margin-left:-100px;
+            transform-style: preserve-3d;/*注意这个3D效果设置在了父元素上*/
+            /*transform:rotateX(-10deg);!*这一行的目的就是为了让我们的3D效果显示更加明显*!*/
+            animation:sport 10s linear 0s infinite normal;/*动画效果*/
+
+        }
+        ul li {
+            background-color: black;
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size:60px;
+            text-align: center;
+            line-height:200px;
+            position:absolute;
+            left:0;
+            top:0;
+
+        }
+        ul li:nth-child(1){
+            /*background-color: grey;*/
+            transform:rotateY(60deg) translateZ(200px);/*分别代表Y轴旋转60度，沿着Z轴移动200个像素*/
+
+        }
+        ul li:nth-child(2){
+            /*background-color: blue;*/
+            transform:rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            /*background-color: yellow;*/
+            transform:rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            /*background-color: green;*/
+            transform:rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            /*background-color: skyblue;*/
+            transform:rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            /*background-color: purple;*/
+            transform:rotateY(360deg) translateZ(200px);
+        }
+        ul li image{
+            width: 200px;
+            height: 200px;
+            border:5px solid skyblue;
+            box-sizing:border-box;
+
+        }
+        ul:hover{
+            animation-play-state: paused;/*鼠标放到上面就停了*/
+        }
+        ul:hover li img{
+            opacity:0.5;/*鼠标放到ul上时，li添加蒙版*/
+        }
+        ul li:hover  img{
+            opacity: 1;/*这个就是鼠标放到某个li标签，不添加蒙版*/
+        }
+        @keyframes sport {
+            from {
+                transform: rotateX(-20deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-20deg) rotateY(360deg);
+            }
+        }
+        .heart{
+            position:absolute;
+            left:100px;
+            bottom:100px;
+            animation: move 1s linear 0s infinite normal;
+
+        }
+        @keyframes move {
+            0%{
+                left:100px;
+                bottom:100px;
+                opacity:1;
+            }
+            50%{
+                left:300px;
+                bottom:300px;
+                opacity: 0;
+            }
+            100%{
+                left:600px;
+                bottom:600px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="image/play_tennis2.jpg"></li>
+    <li><img src="image/play_tennis.jpg"></li>
+    <li><img src="image/line_left.jpg"></li>
+    <li><img src="image/26alphabet.jpg"></li>
+    <li><img src="image/content_aside.jpg"></li>
+    <li><img src="image/wangyi_center.jpg"></li>
+</ul>
+<img src="image/baidu_logo.png" class="heart"alt="">
+<audio src="某一首歌" autoplay="autoplay" loop="loop"></audio>
+<!--自动无限循环播放一个音乐-->
+</body>
+</html>
