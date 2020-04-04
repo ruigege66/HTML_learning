@@ -13,8 +13,12 @@
             height: 1000px;
             border:1px solid black;
             margin:0 auto;
-            background:url("image/play_tennis.jpg") no-repeat, url("image/baidu_logo.png") no-repeat;
+            background:url("image/play_tennis.jpg") no-repeat left top, url("image/baidu_logo.png") no-repeat right top;
             /*注意点：多张背景图片之间使用逗号隔开，先添加的背景图片会盖住后添加的背景图片*/
+            /*另外一种方法*/
+            background-image: url("image/play_tennis2.jpg"),url("image/baidu_logo.png");
+            background-repeat: no-repeat,no-repeat;
+            background-position: left bottom,right bottom;
         }
     </style>
 </head>
