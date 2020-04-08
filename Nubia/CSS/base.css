@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*设置一些全局样式*/
+body{
+    font-family: "微软雅黑";
+    font-size:12px;
+    color:#999;
+    background-color:#f5f5f5;
+}
