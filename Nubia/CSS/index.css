@@ -1,0 +1,23 @@
+/*顶部区域*/
+.top{
+    height:60px;
+    width:100%;/*也就是和父元素一样宽，这里使用百分比的形式，使得网页扩大减小都不会变形*/
+    background-color: red;
+
+}
+/*广告区域*/
+.banner{
+    height: 800px;
+    width: 100%;
+    background-color: green;
+}
+/*内容区域*/
+.content{
+    height: 1883px;
+    width: 100%;
+    background-color: blue;
+}
+/*底部区域*/
+.footer{
+
+}
