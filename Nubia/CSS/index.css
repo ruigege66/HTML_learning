@@ -2,9 +2,93 @@
 .top{
     height:60px;
     width:100%;/*也就是和父元素一样宽，这里使用百分比的形式，使得网页扩大减小都不会变形*/
-    background-color: red;
-
+    background-color: black;
+​
 }
+.top .top_in{
+    width: 1200px;
+    margin:0 auto;
+    height:100%;
+    /*background-color: yellow;*/
+}
+.top  .top_left{
+    float:left;
+    height:100%;
+    width:190px;
+    /*background-color: pink;*/
+}
+.top .top_left>h1{
+    width: 100%;
+    height: 100%;
+​
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background:url("../image/nubia_logo.png");
+    background-size: 190px 60px;/*设置图片大小正好适配div块的大小*/
+}
+.top .top_right{
+    float:right;
+    height: 100%;
+    width: 800px;
+    /*background-color: pink;*/
+}
+.top .top_nav{
+    float:left;
+    width:550px;
+    height: 100%;
+    /*background-color: skyblue;*/
+​
+}
+.top .top_nav>li{
+    float:left;
+    list-style: none;
+}
+.top .top_nav>li>a{
+    font-size:25px;
+    font-weight: bold;/*给文字加粗*/
+    line-height:60px;
+    color:white;/*文字的颜色，直接是color*/
+    margin-left:20px;/*这是给文字添加空隙*/
+    text-decoration:none;/*去掉文字的下划线*/
+}
+/*.top .top_nav>li>a:hover{!*移动鼠标上去变化颜色*!*/
+    /*color:#e82c07;*/
+/*}*/
+.top .top_login{
+    float:right;
+    width: 150px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_login>li{
+    list-style: none;
+    float:right;
+    margin-right:10px;
+}
+.top .top_login>li>a{
+    font-size:20px;
+    font-weight:bold;
+    line-height:60px;
+    color:white;
+​
+    text-decoration:none;
+}
+.top ul>li>a:hover{/*移动鼠标上去变化颜色*/
+    color:#e82c07;
+    /*这里我们使用.top ,top_login>li>a:hover而使用了ul来替代top_login这个可以说是代码的重构，我们希望
+    li标签里的文字鼠标悬浮都变色，这样我们把父层级一改，可以省略代码，在后续编程中这些都是隐形的小技巧
+     */
+}
+.top .top_login>li:nth-child(3){
+    width: 30px;
+    height: 37px;
+    background:url("../image/nubia_person.png");
+    margin-top:10px;
+}
+​
 /*广告区域*/
 .banner{
     height: 800px;
@@ -19,5 +103,5 @@
 }
 /*底部区域*/
 .footer{
-
+​
 }
