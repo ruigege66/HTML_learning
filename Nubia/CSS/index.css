@@ -3,7 +3,7 @@
     height:60px;
     width:100%;/*也就是和父元素一样宽，这里使用百分比的形式，使得网页扩大减小都不会变形*/
     background-color: black;
-​
+
 }
 .top .top_in{
     width: 1200px;
@@ -20,7 +20,7 @@
 .top .top_left>h1{
     width: 100%;
     height: 100%;
-​
+
 }
 .top .top_left>h1>a{
     display: inline-block;
@@ -40,7 +40,7 @@
     width:550px;
     height: 100%;
     /*background-color: skyblue;*/
-​
+
 }
 .top .top_nav>li{
     float:left;
@@ -73,7 +73,7 @@
     font-weight:bold;
     line-height:60px;
     color:white;
-​
+
     text-decoration:none;
 }
 .top ul>li>a:hover{/*移动鼠标上去变化颜色*/
@@ -88,7 +88,7 @@
     background:url("../image/nubia_person.png");
     margin-top:10px;
 }
-​
+
 /*广告区域*/
 .banner{
     height: 800px;
@@ -101,7 +101,50 @@
     width: 100%;
     background-color: blue;
 }
+.banner .nav{
+    width: 1200px;
+    height: 157px;
+    /*margin:0 auto;*//*这里我们想要居中这个模块，但是我们把定位流变成了绝对定位,所以就不管用了*/
+    background:pink;
+    position:absolute;/*只所所以改成绝对定位流，就是想要让这个盒子脱标，这样就可以让nav这个盒子悬浮在下个盒子上面*/
+    left:50%;/*通过这种方式来进行居中盒子，靠左边的一边，然后利用一半的宽度-600px进行回退*/
+    margin-left:-600px;
+}
+.banner .nav>ul{
+    width:100%;
+    height:100%;
+    background:yellow;
+    padding-left: 75px;
+    padding-right:75px;
+    box-sizing:border-box;/*上面使用了内边距，这里是为了不让大盒子变形*/
+}
+.banner .nav>ul>li{
+    width: 150px;
+    height:100%;
+    background:purple;
+    float:left;/*之所以变成浮动流，是因为li会独占一行，这样会占有七行，浮动流可以使它水平排版了*/
+    /*border:1px solid black;*/
+    box-sizing:border-box;/*为了就是不用因为边框而使得盒子变大变小*/
+    list-style: none;
+}
+.banner .nac>ul>li image{
+    width:150px;
+    height:157px;
+}
+.banner .figure{
+    width: 100%;
+    height: 600px;
+    background:red;
+}
+.banner .video{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background:skyblue;
+}
+
 /*底部区域*/
 .footer{
-​
+
 }
