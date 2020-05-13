@@ -41,6 +41,7 @@
     height: 100%;
     /*background-color: skyblue;*/
 
+
 }
 .top .top_nav>li{
     float:left;
@@ -93,27 +94,34 @@
 .banner{
     height: 800px;
     width: 100%;
-    background-color: green;
+    /*background-color: green;*/
 }
 /*内容区域*/
 .content{
     height: 1883px;
     width: 100%;
-    background-color: blue;
+    /*background-color: blue;*/
 }
+.banner .nav_out{
+    background-color: white;
+    height: 157px;
+    width: 100%;
+}
+
 .banner .nav{
     width: 1200px;
     height: 157px;
     /*margin:0 auto;*//*这里我们想要居中这个模块，但是我们把定位流变成了绝对定位,所以就不管用了*/
-    background:pink;
+    /*background:pink;*/
     position:absolute;/*只所所以改成绝对定位流，就是想要让这个盒子脱标，这样就可以让nav这个盒子悬浮在下个盒子上面*/
     left:50%;/*通过这种方式来进行居中盒子，靠左边的一边，然后利用一半的宽度-600px进行回退*/
     margin-left:-600px;
+    background:white;
 }
 .banner .nav>ul{
     width:100%;
     height:100%;
-    background:yellow;
+    /*background:yellow;*/
     padding-left: 75px;
     padding-right:75px;
     box-sizing:border-box;/*上面使用了内边距，这里是为了不让大盒子变形*/
@@ -121,11 +129,15 @@
 .banner .nav>ul>li{
     width: 150px;
     height:100%;
-    background:purple;
+    /*background:purple;*/
     float:left;/*之所以变成浮动流，是因为li会独占一行，这样会占有七行，浮动流可以使它水平排版了*/
     /*border:1px solid black;*/
     box-sizing:border-box;/*为了就是不用因为边框而使得盒子变大变小*/
     list-style: none;
+}
+.banner .nav>ul>li:hover{
+    border-bottom:3px red solid;
+    box-sizing:border-box;
 }
 .banner .nac>ul>li image{
     width:150px;
@@ -134,16 +146,203 @@
 .banner .figure{
     width: 100%;
     height: 600px;
+    /*background:red;*/
+    overflow:hidden:/*隐藏图片的滚动条*/
+    position:relative;
+}
+.banner .figure>img{
+    /*margin:0 auto;这个语法没有效果，对其父元素使用text-align:center；也是没有用的，因为图片太大了，解决方式如下：*/
+    /*如果图片的宽度大于了父元素的宽度，不可能使用margin:0 auto；或者text-align:center;来使图片居中*/
+    /*如果图片的宽度大于父元素的宽度，可以使用定位流，来使得图片居中,但是定位流的弊端也是比较明显*/
+    /*弊端：1.需要写三行代码；2.必须知道图片的宽度；*/
+    /*还有一种方法：margin:0 -100%; 注意点：父元素必须设置text-align:center;*/
+    width:1200px;
+    position:absolute;
+    margin-left:540px;
+    /*如果图片太长而多了一个滚动条，那么可以在父元素的CSS代码中添加overflow属性*/
+}
+.banner .figure>ol{
+    width: 150px;
+    height: 20px;
+    /*background:red;*/
+    position:absolute;/*子绝父相*/
+    left:50%;
+    margin-left:-75px;
+    bottom:300px
+}
+.banner .figure>ol>li{
+    float:left;
+    width: 8px;
+    height: 8px;
     background:red;
+    margin-left:15px;
+    border-radius:50%;
+    border:2px solid transparent;/*transparent代表的是透明色，当然你也可以用rgba来显示透明色*/
+    transition: all 1s;
+    list-style: none;
+ }
+.banner .figure>ol>li:hover{
+    border:2px solid black;
+    background: transparent;
+    transform:scale(2,2);/*放大两倍*/
 }
 .banner .video{
     width: 1200px;
     height: 250px;
     margin: 0 auto;
     margin-top: 10px;
-    background:skyblue;
+    /*background:skyblue;*/
+}
+.banner .video>ul{
+    width: 100%;
+    height: 100%;
+    /*background:yellow;*/
+    /*display:flex;!*这是伸缩布局*!*/
+    /*justify-content: space-between;!*这个语句代表着所有的li标签能够水平铺开*!*/
+
+}
+.banner .video>ul>li{
+    width: 396px;
+    height: 250px;
+    background:black;
+    float:left;/*换成左漂浮，迅速就占领了黄色的全域,这是因为一个挨着一个排版了，原来是每一行进行排版*/
+    list-style:none;
+    margin-right:4px;/*这一行可以换成伸缩布局来进行代替，方法如上一个标签样式*/
+    overflow:hidden;
+    position:relative;
+
+}
+.banner .video>ul>li>img{
+    width: 396px;
+    height: 250px;
+}
+.banner .video .video_info{
+    position:absolute;
+    width: 100%;
+    height: 155px;
+    bottom:0;
+    opacity:1;/*作用：设置元素的透明度   特点：子元素也是跟着透明*/
+
+
+}
+.banner .video .video_info>h3{
+    font-size: 16px;
+    color:black;
+    line-height:40px;
+    text-align: center;
+
+}
+.banner .video .video_info>p{
+    color:black;
+
+}
+.banner .video >ul>li:hover  .video_info{
+    opacity:0.5;
+}
+.banner .video>ul>li:hover img{
+    opacity:0.5;/*这个就是添加蒙版*/
+}
+.banner .video>ul>li:hover .video_info>img{
+    animation: sport 2s .5s ease-in-out infinite;
+}
+@keyframes sport {
+    20% {
+        transform:scale(0.8);
+    }
+    40% {
+        transform:scale(1.2);
+    }
+    60% {
+        transform:scale(0.9);
+    }
+    80% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+.content>dl{
+    width: 1200px;
+    height: 100%;
+    /*background:green;*/
+    margin:0 auto;
+}
+.content>dl>dt{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:30px;
+
+}
+.content>dl>dt>h3{
+    font-size:35px;
+    color:black;
+}
+.content>dl>dt>p{
+    color:#e8340e;
+}
+.content .content_phone{
+    width: 1200px;
+    height: 1200px;
+    /*background:yellow;*/
+}
+/*.content .content_accessories{*/
+    /*width: 1200px;*/
+    /*height: 1200px;*/
+    /*background:skyblue;*/
+    /*display:flex;*/
+    /*justify-content: space-between;!*这个属性就是自适应盒子*!*/
+/*}*/
+.content .content_phone>li{
+    float:left;
+}
+.content .content_phone>li:nth-child(1){
+    width: 1200px;
+    height: 395px;
+    /*background:pink;*/
+    margin-bottom:10px;
+}
+.content .content_phone>li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    /*background:purple;*/
+    margin-right:10px;
+}
+.content .content_phone>li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    /*background:palegreen;*/
+    margin-bottom:10px;
+}
+.content .content_phone>li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    /*background:gold;*/
+    margin-right:10px;
+}
+.content .content_phone>li:nth-child(5){
+    width: 395px;
+    height: 395px;
+    /*background:tomato;*/
+}
+.content .content_accessories>li{
+    float:left;
+    width: 295px;
+    height: 300px;
+    /*background: saddlebrown ;*/
+    margin-right: 5px;
 }
 
+.content .content_phone>li>img{
+    height:100%;/*这个是让图片能够自适应我们的盒子*/
+    transform:all 1s;
+}
+.content .content_phone>li:nth-child(1)>img{
+    margin-left: 30%;
+}
+.content .content_phone>li:nth-child(1)>img:hover{
+    margin-left: 50%;
+}
 /*底部区域*/
 .footer{
 
